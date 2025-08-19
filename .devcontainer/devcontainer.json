@@ -27,5 +27,9 @@
     }
   },
 
-  "remoteUser": "vscode"
+  "remoteUser": "vscode",
+
+  "mounts": [
+    "type=bind,source=${localEnv:HOME}/.ssh,target=/ssh-agent"
+  ]
 }
