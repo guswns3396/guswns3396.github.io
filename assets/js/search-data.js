@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "A collection of unpublished projects and work",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -409,51 +409,36 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-package-for-cleaning-psychometric-datasets",
+          title: 'Package for Cleaning Psychometric Datasets',
+          description: "Python package to clean and process psychometric data",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+              window.location.href = "/projects/clean_pipeline/";
+            },},{id: "projects-latent-pattern-of-decision-making",
+          title: 'Latent Pattern of Decision Making',
+          description: "Applying graphical lasso to uncover hidden dependency pattern in deciding to participate in research",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+              window.location.href = "/projects/glasso/";
+            },},{id: "projects-longitudinal-clustering-of-symptom-trajectories",
+          title: 'Longitudinal Clustering of Symptom Trajectories',
+          description: "Applying growth mixture models to identify different trajectories of depression based on quality of life",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+              window.location.href = "/projects/gmm/";
+            },},{id: "projects-brain-metastases-segmentation",
+          title: 'Brain Metastases Segmentation',
+          description: "Segment metastases in brain MRIs using UNet",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+              window.location.href = "/projects/metastases/";
+            },},{id: "projects-tf-binding-specificity",
+          title: 'TF Binding Specificity',
+          description: "Compare TF binding specificity prediction",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
+              window.location.href = "/projects/tf/";
+            },},{id: "projects-stakeholder-topic-modeling",
+          title: 'Stakeholder Topic Modeling',
+          description: "Topic modeling of stakeholder interviews regarding important ethical considerations in research participation",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
+              window.location.href = "/projects/topic_model/";
             },},{
         id: 'social-email',
         title: 'email',
