@@ -414,6 +414,11 @@ ninja.data = [{
           description: "Python package to clean and process psychometric data",
           section: "Projects",handler: () => {
               window.location.href = "/projects/clean_pipeline/";
+            },},{id: "projects-collabdraw",
+          title: 'CollabDraw',
+          description: "An app for collaborative doodling",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/collabdraw/";
             },},{id: "projects-latent-pattern-of-decision-making",
           title: 'Latent Pattern of Decision Making',
           description: "Applying graphical lasso to uncover hidden dependency pattern in deciding to participate in research",
