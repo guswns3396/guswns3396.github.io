@@ -16,20 +16,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-projects",
-          title: "Projects",
-          description: "A collection of unpublished projects and work",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
-        },{id: "nav-cv",
-          title: "CV",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
-          },
         },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
@@ -419,6 +405,11 @@ ninja.data = [{
           description: "An app for collaborative doodling",
           section: "Projects",handler: () => {
               window.location.href = "/projects/collabdraw/";
+            },},{id: "projects-covid-19-dashboard",
+          title: 'COVID-19 Dashboard',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/covid/";
             },},{id: "projects-latent-pattern-of-decision-making",
           title: 'Latent Pattern of Decision Making',
           description: "Applying graphical lasso to uncover hidden dependency pattern in deciding to participate in research",
@@ -429,11 +420,26 @@ ninja.data = [{
           description: "Applying growth mixture models to identify different trajectories of depression based on quality of life",
           section: "Projects",handler: () => {
               window.location.href = "/projects/gmm/";
+            },},{id: "projects-image-registration",
+          title: 'Image Registration',
+          description: "Image registration using optimization",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/gradient_descent/";
+            },},{id: "projects-housing-price-prediction",
+          title: 'Housing Price Prediction',
+          description: "Prediction of housing prices using various ML algorithms",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/housing_price/";
             },},{id: "projects-brain-metastases-segmentation",
           title: 'Brain Metastases Segmentation',
           description: "Segment metastases in brain MRIs using UNet",
           section: "Projects",handler: () => {
               window.location.href = "/projects/metastases/";
+            },},{id: "projects-rate-my-dorm",
+          title: 'Rate My Dorm',
+          description: "Website for rating and reviewing USC dorms",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/rate_dorm/";
             },},{id: "projects-tf-binding-specificity",
           title: 'TF Binding Specificity',
           description: "Compare TF binding specificity prediction",
