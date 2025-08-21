@@ -5,7 +5,7 @@ permalink: /projects/
 description: A collection of unpublished projects and work
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [work, personal, class]
 horizontal: false
 ---
 

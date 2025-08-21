@@ -3,8 +3,8 @@ layout: page
 title: CollabDraw
 description: An app for collaborative doodling
 img: 
-importance: 1
-category: fun
+importance: 2
+category: personal
 related_publications: false
 ---
 

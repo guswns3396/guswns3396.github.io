@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Brain Metastases Segmentation
-description: Segment metastases in brain MRIs using UNet
+title: Housing Price Prediction
+description: Prediction of housing prices using various ML algorithms
 img: 
 importance: 1
-category: personal
+category: class
 related_publications: false
 ---
 

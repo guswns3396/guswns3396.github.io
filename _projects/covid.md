@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Brain Metastases Segmentation
-description: Segment metastases in brain MRIs using UNet
+title: COVID-19 Dashboard
+description: 
 img: 
-importance: 1
-category: personal
+importance: 4
+category: class
 related_publications: false
 ---
 

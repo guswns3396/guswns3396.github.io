@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Brain Metastases Segmentation
-description: Segment metastases in brain MRIs using UNet
+title: Rate My Dorm
+description: Website for rating and reviewing USC dorms
 img: 
-importance: 1
-category: personal
+importance: 3
+category: class
 related_publications: false
 ---
 

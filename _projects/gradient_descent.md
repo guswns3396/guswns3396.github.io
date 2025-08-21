@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Brain Metastases Segmentation
-description: Segment metastases in brain MRIs using UNet
+title: Image Registration
+description: Image registration using optimization
 img: 
-importance: 1
+importance: 3
 category: personal
 related_publications: false
 ---

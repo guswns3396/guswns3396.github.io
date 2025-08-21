@@ -3,8 +3,8 @@ layout: page
 title: TF Binding Specificity
 description: Compare TF binding specificity prediction
 img: 
-importance: 1
-category: fun
+importance: 2
+category: class
 related_publications: false
 ---
 
