@@ -1,10 +1,10 @@
 ---
 layout: page
 title: TF Binding Specificity
-description: Compare TF binding specificity prediction
+description: Comparison of TF binding specificity prediction given by models with and without DNA shape information
 img: 
 importance: 2
-category: class
+category: Stats & ML
 related_publications: false
 ---
 

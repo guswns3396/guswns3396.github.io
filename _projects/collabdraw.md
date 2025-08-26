@@ -1,10 +1,10 @@
 ---
 layout: page
 title: CollabDraw
-description: An app for collaborative doodling
+description: A web application for real-time collaborative doodling
 img: 
 importance: 2
-category: personal
+category: Software Engineering
 related_publications: false
 ---
 

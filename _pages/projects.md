@@ -5,7 +5,7 @@ permalink: /projects/
 description: A collection of unpublished projects and work
 nav: true
 nav_order: 3
-display_categories: [work, personal, class]
+display_categories: [Stats & ML, Software Engineering]
 horizontal: false
 ---
 

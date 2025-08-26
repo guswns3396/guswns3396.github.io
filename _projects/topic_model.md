@@ -4,7 +4,7 @@ title: Stakeholder Topic Modeling
 description: Topic modeling of stakeholder interviews regarding important ethical considerations in research participation
 img: 
 importance: 1
-category: work
+category: Stats & ML
 related_publications: false
 ---
 

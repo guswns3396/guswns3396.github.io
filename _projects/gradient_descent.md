@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Image Registration
-description: Image registration using optimization
+description: Basic concepts for image registration from transformations to gradient descent
 img: 
 importance: 3
-category: personal
+category: Stats & ML
 related_publications: false
 ---
 

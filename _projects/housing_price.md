@@ -4,7 +4,7 @@ title: Housing Price Prediction
 description: Prediction of housing prices using various ML algorithms
 img: 
 importance: 1
-category: class
+category: Stats & ML
 related_publications: false
 ---
 

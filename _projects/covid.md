@@ -1,10 +1,10 @@
 ---
 layout: page
 title: COVID-19 Dashboard
-description: 
+description: Dashboard that displays the trajectories of COVID-19 cases in the US in real-time
 img: 
 importance: 4
-category: class
+category: Software Engineering
 related_publications: false
 ---
 

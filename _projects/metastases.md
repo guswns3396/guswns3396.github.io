@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Brain Metastases Segmentation
-description: Segment metastases in brain MRIs using UNet
+description: Metastases segmentation of brain MRIs using UNet
 img: 
 importance: 1
-category: personal
+category: Stats & ML
 related_publications: false
 ---
 
