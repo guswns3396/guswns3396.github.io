@@ -8,6 +8,7 @@ nav_order: 2
 ---
 
 <!-- _pages/publications.md -->
+Please refer to my <a href="https://scholar.google.com/citations?user=l1SIXHUAAAAJ">Google Scholar</a> for the most updated information.
 
 <!-- Bibsearch Feature -->
 
