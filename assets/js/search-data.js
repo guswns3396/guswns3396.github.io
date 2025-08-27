@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-projects",
+          title: "Projects",
+          description: "A collection of unpublished projects and work",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
         },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
@@ -395,24 +402,19 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-package-for-cleaning-psychometric-datasets",
-          title: 'Package for Cleaning Psychometric Datasets',
-          description: "Python package to clean and process psychometric data",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/clean_pipeline/";
-            },},{id: "projects-collabdraw",
+          section: "News",},{id: "projects-collabdraw",
           title: 'CollabDraw',
-          description: "An app for collaborative doodling",
+          description: "A web application for real-time collaborative doodling",
           section: "Projects",handler: () => {
               window.location.href = "/projects/collabdraw/";
             },},{id: "projects-covid-19-dashboard",
           title: 'COVID-19 Dashboard',
-          description: "",
+          description: "Dashboard that displays the trajectories of COVID-19 cases in the US in real-time",
           section: "Projects",handler: () => {
               window.location.href = "/projects/covid/";
             },},{id: "projects-latent-pattern-of-decision-making",
           title: 'Latent Pattern of Decision Making',
-          description: "Applying graphical lasso to uncover hidden dependency pattern in deciding to participate in research",
+          description: "Applying graph modeling to uncover hidden dependency pattern of various stakeholders in their decision to participate in research",
           section: "Projects",handler: () => {
               window.location.href = "/projects/glasso/";
             },},{id: "projects-longitudinal-clustering-of-symptom-trajectories",
@@ -422,7 +424,7 @@ ninja.data = [{
               window.location.href = "/projects/gmm/";
             },},{id: "projects-image-registration",
           title: 'Image Registration',
-          description: "Image registration using optimization",
+          description: "Basic concepts for image registration from transformations to gradient descent",
           section: "Projects",handler: () => {
               window.location.href = "/projects/gradient_descent/";
             },},{id: "projects-housing-price-prediction",
@@ -432,9 +434,14 @@ ninja.data = [{
               window.location.href = "/projects/housing_price/";
             },},{id: "projects-brain-metastases-segmentation",
           title: 'Brain Metastases Segmentation',
-          description: "Segment metastases in brain MRIs using UNet",
+          description: "Metastases segmentation of brain MRIs using UNet",
           section: "Projects",handler: () => {
               window.location.href = "/projects/metastases/";
+            },},{id: "projects-psypy",
+          title: 'PsyPy',
+          description: "Python package to clean and process psychometric data",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/psypy/";
             },},{id: "projects-rate-my-dorm",
           title: 'Rate My Dorm',
           description: "Website for rating and reviewing USC dorms",
@@ -442,7 +449,7 @@ ninja.data = [{
               window.location.href = "/projects/rate_dorm/";
             },},{id: "projects-tf-binding-specificity",
           title: 'TF Binding Specificity',
-          description: "Compare TF binding specificity prediction",
+          description: "Comparison of TF binding specificity prediction given by models with and without DNA shape information",
           section: "Projects",handler: () => {
               window.location.href = "/projects/tf/";
             },},{id: "projects-stakeholder-topic-modeling",
