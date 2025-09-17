@@ -1,7 +1,7 @@
 ---
 layout: cv
 # permalink: /cv/
-permalink: /assets/pdf/example_pdf.pdf
+permalink: /assets/pdf/HJY_CV.pdf
 title: CV
 nav: true
 nav_order: 5
