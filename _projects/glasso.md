@@ -20,3 +20,5 @@ No significant differences were found in the overall graph structure between the
 In future work, we plan to explore alternative approaches, such as grouped graphical lasso, which incorporates group information into the analysis. Additionally, we aim to examine different outcome measures, such as the degree of nodes, to further investigate the decision-making patterns across groups.
 
 <a href="https://github.com/guswns3396-work/glasso">GitHub</a>
+
+Collaborators: Jane Paik Kim, Max Kasun, Laura Roberts

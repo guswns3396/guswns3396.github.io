@@ -20,3 +20,5 @@ The qualitative analysis revealed no distinct or discernible topics across the s
 The lack of interpretable results may be attributed to the simplicity of the LDA model, combined with the complexity and variability of the interview data. The unstructured nature of the interviews led to significant divergence in responses, even within the same stakeholder group. Additionally, the sample size was relatively small, which may have limited the model's ability to identify clear patterns. We believe that applying a more advanced algorithm (e.g., GPT-based models) may provide more robust and meaningful insights.
 
 <a href="https://github.com/guswns3396-work/topic-model">GitHub</a>
+
+Collaborators: Jane Paik Kim, Adam Miner, Katie Ryan, Max Kasun
