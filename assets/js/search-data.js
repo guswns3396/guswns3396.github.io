@@ -431,12 +431,12 @@ ninja.data = [{
               window.location.href = "/projects/gmm/";
             },},{id: "projects-image-registration",
           title: 'Image Registration',
-          description: "Basic concepts for image registration from transformations to gradient descent",
+          description: "Basic concepts for optimization in image registration from transformations to gradient descent as part of a take-home technical challenge",
           section: "Projects",handler: () => {
               window.location.href = "/projects/gradient_descent/";
             },},{id: "projects-housing-price-prediction",
           title: 'Housing Price Prediction',
-          description: "Prediction of housing prices using various ML algorithms",
+          description: "Prediction of housing prices using various ML algorithms including MLP, Random Forests, and XGBoost",
           section: "Projects",handler: () => {
               window.location.href = "/projects/housing_price/";
             },},{id: "projects-brain-metastases-segmentation",
@@ -461,7 +461,7 @@ ninja.data = [{
               window.location.href = "/projects/tf/";
             },},{id: "projects-stakeholder-topic-modeling",
           title: 'Stakeholder Topic Modeling',
-          description: "Topic modeling of stakeholder interviews regarding important ethical considerations in research participation",
+          description: "Topic modeling of stakeholder interviews regarding important ethical considerations in neuroscience research",
           section: "Projects",handler: () => {
               window.location.href = "/projects/topic_model/";
             },},{
