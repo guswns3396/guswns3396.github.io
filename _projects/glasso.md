@@ -8,15 +8,17 @@ category: Stats & ML
 related_publications: false
 ---
 #### Objective
-We aim to uncover and compare patterns of decision making exhibited by various stakeholders in their decision to participate in research.
+Our objective is to identify and compare the patterns of decision-making among different stakeholders (healthy, mentally ill, and physically ill) in deciding whether to participate in research.
 
 #### Method
-The data is collected from asking different groups (healthy, mentally ill, physically ill) to rate how important various factors are when deciding to participate in research on a 5-point Likert scale. We applied graphical lasso which gives sparse estimate of the inverse of the covariance matrix (precision matrix). The precision matrix can then be converted to a matrix of conditional dependence, with two factors being conditionally independent if the element is equal to zero. This conditional dependence structure can be represented graphically with the factors being nodes and the values of the matrix being edges. We then compared graphical outcomes (modularity, density, betweenness centrality, edge weights) of two stakeholder groups by taking their difference in a given outcome and testing for significance using permutation test.
+We collected data from three stakeholder groups (healthy, mentally ill, and physically ill) who rated the importance of various factors when deciding whether to participate in research on a 5-point Likert scale. To analyze the data, we applied graphical lasso, a method that estimates a sparse inverse of the covariance matrix, also known as the precision matrix. The precision matrix was then used to construct a matrix of conditional dependence, where factors are conditionally independent if the corresponding element is zero. This structure was visualized as a graph, with factors represented as nodes and the relationships between them as edges. We compared the graphical outcomes (modularity, density, betweenness centrality, and edge weights) between the two stakeholder groups by calculating the differences in these outcomes and testing for significance using permutation tests.
 
 #### Result
-The groups show no significant differences in overall graph structure as shown by density and modularity. The groups show significant differences in betweenness centrality of nodes as well as weights for edges.
+No significant differences were found in the overall graph structure between the groups, as indicated by the density and modularity measures. However, significant differences were observed in betweenness centrality and edge weights between the groups.
 
 #### Discussion
-We would like to try alternative approaches that leverage group information (e.g. grouped graphical lasso) and compare different outcome (e.g. degree of a node).
+In future work, we plan to explore alternative approaches, such as grouped graphical lasso, which incorporates group information into the analysis. Additionally, we aim to examine different outcome measures, such as the degree of nodes, to further investigate the decision-making patterns across groups.
 
 <a href="https://github.com/guswns3396-work/glasso">GitHub</a>
+
+Collaborators: Jane Paik Kim, Max Kasun, Laura Roberts
