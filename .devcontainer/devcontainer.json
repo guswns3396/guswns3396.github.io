@@ -2,7 +2,7 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/jekyll
 {
   "name": "Jekyll",
-  "image": "mcr.microsoft.com/devcontainers/jekyll",
+  "image": "amirpourmand/al-folio:latest",
   // Using a Dockerfile to fix the broken Yarn repository. See issue #3487.
   "build": {
     "dockerfile": "Dockerfile"
@@ -31,5 +31,6 @@
     }
   },
 
-  "remoteUser": "vscode"
+  "remoteUser": "root",
+  "containerUser": "root"
 }
