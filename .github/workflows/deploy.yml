@@ -34,11 +34,6 @@ on:
       - main
     paths:
       - "assets/**"
-<<<<<<< HEAD
-      - "_sass/**"
-      - "_scripts/**"
-=======
->>>>>>> template/main
       - "**.bib"
       - "**.html"
       - "**.js"
@@ -55,17 +50,10 @@ on:
       - "!.github/workflows/lighthouse-badger.yml"
       - "!.github/workflows/prettier.yml"
       - "!lighthouse_results/**"
-<<<<<<< HEAD
-      - "!CONTRIBUTING.md"
-      - "!CUSTOMIZE.md"
-      - "!FAQ.md"
-      - "!INSTALL.md"
-=======
       - "!docs/CONTRIBUTING.md"
       - "!docs/CUSTOMIZE.md"
       - "!docs/FAQ.md"
       - "!docs/INSTALL.md"
->>>>>>> template/main
       - "!README.md"
   workflow_dispatch:
 
@@ -89,8 +77,6 @@ jobs:
         with:
           python-version: "3.13"
           cache: "pip" # caching pip dependencies
-<<<<<<< HEAD
-=======
       - name: Setup Node 🧰
         uses: actions/setup-node@v4
         with:
@@ -98,7 +84,6 @@ jobs:
           cache: "npm"
       - name: Install JS deps 📦
         run: npm ci
->>>>>>> template/main
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:
