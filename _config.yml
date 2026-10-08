@@ -253,6 +253,7 @@ exclude:
   - vendor
   - _pages/blog.md
   - _pages/dropdown.md
+  - _pages/teaching.md
 keep_files:
   - CNAME
   - .nojekyll
