@@ -2,7 +2,7 @@
 layout: page
 title: PsyPy
 description: Python package to clean and process psychometric data
-img: 
+img:
 importance: 1
 category: Software Engineering
 related_publications: false

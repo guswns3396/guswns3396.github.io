@@ -2,20 +2,23 @@
 layout: page
 title: Image Registration
 description: Basic concepts for optimization in image registration from transformations to gradient descent as part of a take-home technical challenge
-img: 
+img:
 importance: 3
 category: Stats & ML
 related_publications: false
 ---
+
 #### Method 1: Brute force alignment
+
 This brute force method should iterate through all angles and computes the mean squared error between the transformed source image and the target image. We simply pick the angle with the minimum mean-squared error.
 
 ##### MSE
+
 Mean-squared error is given by the following equation
 $$\text{MSE} = \frac{1}{n}\sum_{i=0}^{n}{(\hat{Y_i} - Y_i)^{2}}$$
 
 We can find the optimal angle $\theta^*$ by
-$$ \theta^{*} = \underset{\theta}{\operatorname{\arg \min}}{\text{MSE}(Y, \text{rotate}(X, \theta))}$$
+$$ \theta^{\*} = \underset{\theta}{\operatorname{\arg \min}}{\text{MSE}(Y, \text{rotate}(X, \theta))}$$
 where $Y$ is the target image, $X$ is the source image, and $\theta$ is the angle of rotation.
 
 #### Method 2: Least squares
@@ -23,6 +26,7 @@ where $Y$ is the target image, $X$ is the source image, and $\theta$ is the angl
 Although the brute force approach works, it is obviously not the optimal approach, especially if the images are more deformed/translated/scaled than this toy example. Instead, if we manually define a few pairs of points that match between the two images, we can use a least squares approach to compute a linear transformation matrix that transforms points from the source to the target image. **Make the solutions generalizable to any transformation (scaling,rotation,translation). Print out your tranformation matrix. Display an image subtraction between target and source.**
 
 ##### Estimating transformation parameters
+
 Transformation from source coordinate $i$ to target coordinate $x$ is done by:
 $$x = Mi$$
 where $M$ is the transformation matrix.
@@ -52,33 +56,40 @@ You can read more about SciPy's built-in optimizers here
 https://docs.scipy.org/doc/scipy/tutorial/optimize.html
 
 ##### Gradient descent
+
 In order to perform gradient descent, the gradient of the cost function with respect to the transformation matrix parameters is required.
 
 The cost function can be written as the following:
-$$ C = \frac{1}{n}\sum_{i,j}[I(x(i,j;\Theta), y(i,j;\Theta)) - I_R(i,j)]^2 = \frac{1}{n}\sum_{i,j}e_{ij}^2$$
+$$ C = \frac{1}{n}\sum*{i,j}[I(x(i,j;\Theta), y(i,j;\Theta)) - I_R(i,j)]^2 = \frac{1}{n}\sum*{i,j}e\_{ij}^2$$
 where $i,j$ are coordinates of the target image, $x, y$ are functions that transform the coordinates in the target image to the coordinates of the source image using the parameters of the transformation matrix $\Theta$, and $I, I_R$ are functions that get the pixel value at the given coordinates.
 
 The gradient of the cost function with respect to transformation matrix $\Theta$ with $K=6$ parameters is :
 $$\nabla_{\Theta}{C} = \begin{bmatrix}\frac{\partial C}{\partial\Theta_1} \\ \vdots \\ \frac{\partial C}{\partial\Theta_6}\end{bmatrix}$$
 where
-$$ \frac{\partial C}{\partial\Theta_k} = \frac{1}{n}\sum_{i,j}{\frac{\partial C}{\partial e_{ij}}\frac{\partial e_{ij}}{\partial \Theta_k}}$$
+$$ \frac{\partial C}{\partial\Theta*k} = \frac{1}{n}\sum*{i,j}{\frac{\partial C}{\partial e*{ij}}\frac{\partial e*{ij}}{\partial \Theta_k}}$$
 according to the chain rule.
 
 Here,
-$$ \frac{\partial C}{\partial e_{ij}} = 2e_{ij} = 2(I(x(i,j;\Theta), y(i,j;\Theta))-I_R(i,j))$$
+$$ \frac{\partial C}{\partial e*{ij}} = 2e*{ij} = 2(I(x(i,j;\Theta), y(i,j;\Theta))-I_R(i,j))$$
 
 a.k.a. the influence function and
 $$\frac{\partial e_{ij}}{\partial \Theta_k} = \frac{\partial}{\partial \Theta_k}(I(x(i,j;\Theta), y(i,j;\Theta))-I_R(i,j))$$
-$$ = \begin{bmatrix}\frac{\partial x(i,j)}{\partial \Theta_k} & \frac{\partial y(i,j)}{\partial \Theta_k} \end{bmatrix}
-\begin{bmatrix}\frac{\partial I(x(i,j;\Theta), y(i,j;\Theta))}{\partial x} \\ \frac{\partial I(x(i,j;\Theta), y(i,j;\Theta))}{\partial y} \end{bmatrix}$$
+
+$$
+= \begin{bmatrix}\frac{\partial x(i,j)}{\partial \Theta_k} & \frac{\partial y(i,j)}{\partial \Theta_k} \end{bmatrix}
+\begin{bmatrix}\frac{\partial I(x(i,j;\Theta), y(i,j;\Theta))}{\partial x} \\ \frac{\partial I(x(i,j;\Theta), y(i,j;\Theta))}{\partial y} \end{bmatrix}
+$$
 
 where the first matrix, coordinate matrix model, is a $6 \times 2$ matrix and the second matrix is the image gradient.
 
 Since the affine transformation is given by:
 $$\begin{bmatrix}x \\ y \\ 1\end{bmatrix} = \begin{bmatrix}\Theta_1 & \Theta_2 & \Theta_3 \\ \Theta_4 & \Theta_5 & \Theta_6 \\ 0 & 0 & 1\end{bmatrix} \begin{bmatrix}i \\ j \\ 1\end{bmatrix}$$
 coordinate matrix model can be rewritten as:
-$$ \begin{bmatrix}\frac{\partial x(i,j)}{\partial \Theta_k} & \frac{\partial y(i,j)}{\partial \Theta_k} \end{bmatrix} =
-\begin{bmatrix}i & 0 \\ j & 0 \\ 1 & 0 \\ 0 & i \\ 0 & j \\ 0 & 1\end{bmatrix}$$
+
+$$
+\begin{bmatrix}\frac{\partial x(i,j)}{\partial \Theta_k} & \frac{\partial y(i,j)}{\partial \Theta_k} \end{bmatrix} =
+\begin{bmatrix}i & 0 \\ j & 0 \\ 1 & 0 \\ 0 & i \\ 0 & j \\ 0 & 1\end{bmatrix}
+$$
 
 As for the image gradient, it can be obtained with a filter. In this example, we choose the Sobel filter.
 

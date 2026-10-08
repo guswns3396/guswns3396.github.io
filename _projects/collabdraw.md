@@ -2,7 +2,7 @@
 layout: page
 title: CollabDraw
 description: A web application for real-time collaborative doodling
-img: 
+img:
 importance: 2
 category: Software Engineering
 related_publications: false

@@ -2,7 +2,7 @@
 layout: page
 title: Rate My Dorm
 description: Website for rating and reviewing USC dorms
-img: 
+img:
 importance: 3
 category: Software Engineering
 related_publications: false
