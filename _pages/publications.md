@@ -9,8 +9,6 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
-Please refer to my <a href="https://scholar.google.com/citations?user=l1SIXHUAAAAJ">Google Scholar</a> and CV for the most updated information.
-
 <!-- Bibsearch Feature -->
 
 {% include bib_search.liquid %}
